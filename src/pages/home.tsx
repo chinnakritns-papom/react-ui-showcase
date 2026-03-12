@@ -1,16 +1,13 @@
 import CardProject from "../components/CardProject";
 import { demos } from "../data/dataNavbar";
+import computer from "../assets/computer.gif";
 
 // export default Home;
 function Home() {
   return (
     <div className="flex-grow bg-gradient-to-b from-yellow-50 to-blue-100 py-9">
       <div className="max-w-4xl mx-auto px-6 text-center mb-12">
-        <img
-          src="src/assets/computer.gif"
-          alt="meteor"
-          className="mx-auto h-18 w-18"
-        />
+        <img src={computer} alt="meteor" className="mx-auto h-18 w-18" />
 
         <h1
           className="text-5xl font-bold text-gray-900 drop-shadow-[3px_3px_0_rgba(0,0,0,0.25)]"
