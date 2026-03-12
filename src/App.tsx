@@ -1,8 +1,18 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import MainLayout from "./layout/mainLayout";
+import Home from "./pages/home";
+// import NavbarDemo from "./pages/NavbarDemo";
+
 function App() {
   return (
-    <div className="h-screen flex items-center justify-center bg-gray-200">
-      <h1 className="text-5xl font-bold text-blue-500">Hello Tailwind</h1>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<MainLayout />}>
+          <Route path="/" element={<Home />} />
+          {/* <Route path="/navbar" element={<NavbarDemo />} /> */}
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
