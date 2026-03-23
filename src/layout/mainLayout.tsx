@@ -4,12 +4,12 @@ import { Outlet } from "react-router-dom";
 
 function MainLayout() {
   return (
-    <div className="min-h-screen flex flex-col bg-gray-50">
+    <div className="min-h-screen flex flex-col bg-gray-900 text-white">
       <Navbar />
 
-      <div className="flex-grow">
+      <main className="flex-1">
         <Outlet />
-      </div>
+      </main>
 
       <Footer />
     </div>
