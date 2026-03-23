@@ -1,4 +1,4 @@
-import { HeartIcon, StarIcon } from "@heroicons/react/24/solid";
+import { StarIcon } from "@heroicons/react/24/solid";
 
 function Home() {
   const posts = [
